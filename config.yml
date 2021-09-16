@@ -1,10 +1,11 @@
-token: "xxxxxxxxxxxxxxxx"    # Lichess OAuth2 Token.
+token: "lip_ao5JyM0fdTzQUECORkNw"    # Lichess OAuth2 Token.
 url: "https://lichess.org/"  # Lichess base URL.
 
 engine:                      # Engine settings.
   dir: "./"                  # Directory containing engines, relative to this project.
   name: "chess-engine"    # Binary name of the engine to use.
   protocol: "uci"            # "uci" or "xboard"
+  uci_ponder: true
   ponder: true               # Think on opponent's time.
   polyglot:
     enabled: true           # Activate polyglot book.
@@ -35,7 +36,7 @@ option name Hash type spin : 32768
 option name Ponder type check : true
 option name MultiPV type spin : 1
 option name Skill Level type spin : 20
-option name Move Overhead type spin : 5000
+option name Move Overhead type spin : 1200
 option name nodestime type spin : 0
 option name UCI_Chess960 type check : false
 option name UCI_AnalyseMode type check : false
